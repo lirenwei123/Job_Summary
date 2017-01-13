@@ -16,9 +16,12 @@ NSLog\(@"启程～"\);
 
 如果注册了cell，那么在dequ后，cell就有了，就永远进入不了 cell =nil;
 
+# 
+
+  
 
 
+@property\(nonatomic,copy\)subViewTouchCallBackcallBack;
 
-
-block里在执行的时候，由参数的话会让事件发生变化，在继续调用时会混乱
+如果是return\[\[NSBundlemainBundle\]loadNibNamed:NSStringFromClass\(self\)owner:niloptions:nil\].firstObject;这种形式去创建，则block就只能在其他对象方法中去赋值；否则，在创建后，block始终为nil，
 
