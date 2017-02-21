@@ -33,3 +33,8 @@ self.tabBarController;
 
 \(void\)viewWillAppear:\(BOOL\)animated晚于\(void\)viewDidLoad
 
+
+
+11.imgv上加子视图，imgv只有设置了  
+userInteractionEnabled=yes后，子视图才能接受手势
+
