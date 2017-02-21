@@ -20,9 +20,16 @@ NSLog\(@"启程～"\);
 
 # 7.@property\(nonatomic,copy\)subViewTouchCallBackcallBack;
 
-# 8.如果是return\[\[NSBundlemainBundle\]loadNibNamed:NSStringFromClass\(self\)owner:niloptions:nil\].firstObject;这种形式去创建，则block就只能在其他对象方法中去赋值；否则，在创建后，block始终为nil， 
+# 8.如果是return\[\[NSBundlemainBundle\]loadNibNamed:NSStringFromClass\(self\)owner:niloptions:nil\].firstObject;这种形式去创建，则block就只能在其他对象方法中去赋值；否则，在创建后，block始终为nil，
 
 # 9.OS\_ACTIVITY\_MODE  disable xcode8LOG
 
+10,从一个vc pop到另一个vc后，要拿到  
+self.tabBarController;
 
+要到- \(void\)viewWillAppear:\(BOOL\)animated
+
+而在- \(void\)viewDidLoad是拿不到的，
+
+\(void\)viewWillAppear:\(BOOL\)animated晚于\(void\)viewDidLoad
 
