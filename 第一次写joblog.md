@@ -40,9 +40,27 @@ userInteractionEnabled=yes后，子视图才能接受手势
 
 NSNumber\*orientation = \[NSNumbernumberWithInt:UIInterfaceOrientationLandscapeRight\];
 
- \[\[UIDevicecurrentDevice\]setValue:
+\[\[UIDevicecurrentDevice\]setValue:
 
- orientationforKey:@"orientation"\];
+orientationforKey:@"orientation"\];
 
 13.使用 colorWithPatternImage 的 iOS 中拉伸图像
+
+
+
+14
+
+int\*size ;
+
+ \*size =0;
+
+charbuffer\[1024\];
+
+bzero\(buffer,1024\);
+
+//char\*类型可以在函数里传值，但是int类型为什么不能传？
+
+//因为char\*传地址int传值把int变换成int \*就可以传值了
+
+ \[selfReturnRequestData:MarketTypeSortType:SortTypeStockType:StockTypeOrderFlag:0Number:reqNumbuffer:buffersize:size\];
 
