@@ -46,13 +46,11 @@ orientationforKey:@"orientation"\];
 
 13.使用 colorWithPatternImage 的 iOS 中拉伸图像
 
-
-
 14
 
 int\*size ;
 
- \*size =0;
+\*size =0;
 
 charbuffer\[1024\];
 
@@ -62,5 +60,11 @@ bzero\(buffer,1024\);
 
 //因为char\*传地址int传值把int变换成int \*就可以传值了
 
- \[selfReturnRequestData:MarketTypeSortType:SortTypeStockType:StockTypeOrderFlag:0Number:reqNumbuffer:buffersize:size\];
+\[selfReturnRequestData:MarketTypeSortType:SortTypeStockType:StockTypeOrderFlag:0Number:reqNumbuffer:buffersize:size\];
+
+15.
+
+swich里不能直接定义类型，但是可以使用函数代替
+
+
 
