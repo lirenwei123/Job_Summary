@@ -18,11 +18,11 @@ NSLog\(@"启程～"\);
 
 ###### 
 
-###### 7.@property\(nonatomic,copy\)subViewTouchCallBackcallBack;
+###### 7.@property\(nonatomic,copy\)subViewTouchCallBack  callBack;
 
-###### 8.如果是return\[\[NSBundlemainBundle\]loadNibNamed:NSStringFromClass\(self\)owner:niloptions:nil\].firstObject;这种形式去创建，则block就只能在其他对象方法中去赋值；否则，在创建后，block始终为nil，
+###### 8.如果是return\[\[NSBundle mainBundle\]loadNibNamed:NSStringFromClass\(self\) owner:nil options:nil\].firstObject;这种形式去创建，则block就只能在其他对象方法中去赋值；否则，在创建后，block始终为nil，
 
-###### 9.OS\_ACTIVITY\_MODE  disable xcode8LOG
+###### 9.OS\_ACTIVITY\_MODE  disable xcode8LOG  Xcode8 屏蔽日志
 
 10,从一个vc pop到另一个vc后，要拿到  
 self.tabBarController;
@@ -38,7 +38,7 @@ userInteractionEnabled=yes后，子视图才能接受手势
 
 12.设置屏幕旋转方向使用kvo，
 
-NSNumber\*orientation = \[NSNumbernumberWithInt:UIInterfaceOrientationLandscapeRight\];
+NSNumber\*orientation = \[NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight\];
 
 \[\[UIDevicecurrentDevice\]setValue:
 
@@ -52,7 +52,7 @@ int\*size ;
 
 \*size =0;
 
-charbuffer\[1024\];
+char buffer\[1024\];
 
 bzero\(buffer,1024\);
 
@@ -66,7 +66,7 @@ bzero\(buffer,1024\);
 
 swich里不能直接定义类型，但是可以使用函数代替
 
-
+16.
 
 ![](/assets/import.png)
 
@@ -89,6 +89,38 @@ swich里不能直接定义类型，但是可以使用函数代替
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17.如果要设置TABLEVIEW的顶部菜单在上拉时不滚动，可以设置sectionHeader;
 
 
 
