@@ -80,9 +80,11 @@ swich里不能直接定义类型，但是可以使用函数代替
 
 19.XIB控制器，必须要等待XIB控制器出来后才能加载出里面的XIB控件
 
-
-
 20.C++:
 
-    cell向上取整floor向下取整
+```
+cell向上取整floor向下取整
+```
+
+21.cell.selectionStyle=UITableViewCellSelectionStyleNone;可能会影响到CELL的点击，导致有时不响应。
 
